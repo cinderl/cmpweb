@@ -92,7 +92,7 @@ console.log(greet('Carlos'));
 
 ## 8. Blockquote and Footnote
 
-> This is a blockquote. Use it for notable text, citations or emphasis.
+> This is a *blockquote*. Use it for notable text, citations or emphasis.
 
 Here's a footnote example[^1].
 

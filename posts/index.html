@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posts Index - Carlos Mendez</title>
+    <title>Articles - Carlos Mendez</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/brand/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/brand/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/brand/logo.png">
+    <link rel="manifest" href="../site.webmanifest">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/styles.css">
     <script>
         tailwind.config = {
             theme: {
@@ -27,19 +32,41 @@
     </style>
 </head>
 <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="../index.html" class="flex items-center">
+                    <img src="../img/brand/logo.png" alt="CM Logo" class="h-8 w-auto">
+                    <span class="ml-2 text-2xl font-bold gradient-text hidden sm:inline-block">Carlos Méndez</span>
+                </a>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 bg-white/95 absolute top-full left-0 right-0 shadow-lg border-t">
+                <div class="flex flex-col space-y-4 px-6 py-4">
+                    <a href="../index.html#about" class="text-gray-600 hover:text-primary transition text-lg">About</a>
+                    <a href="../index.html#experience" class="text-gray-600 hover:text-primary transition text-lg">Experience</a>
+                    <a href="../technologies.html" class="text-gray-600 hover:text-primary transition text-lg">Technologies</a>
+                    <a href="../posts/" class="text-gray-600 hover:text-primary transition text-lg">Articles</a>
+                    <a href="../index.html#contact" class="text-gray-600 hover:text-primary transition text-lg">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div class="container mx-auto px-6 py-12">
-        <h1 class="text-4xl font-bold mb-12 gradient-text">All Posts</h1>
+        <br/>
+
         <!-- Technology Posts -->
         <div class="mb-12">
             <h2 class="text-2xl font-bold mb-6 text-gray-800">Technology Posts</h2>
             <div class="grid gap-6 md:grid-cols-2">
                 <a href="../post.html#technology/tech2026" class="block bg-white rounded-lg shadow-sm hover:shadow-md transition p-6">
-                    <h3 class="text-xl font-semibold text-gray-800 hover:text-primary">Tech 2026</h3>
-                    <p class="text-gray-600 mt-2">Technology Trends and Predictions</p>
+                    <h3 class="text-xl font-semibold text-gray-800 hover:text-primary">Technology Trends and Predictions</h3>
+                    <p class="text-gray-600 mt-2">Beyond the Hype: 4 Surprising Truths Shaping the Intelligent Industry of 2026</p>
                 </a>
             </div>
         </div>
-        
+
         <!-- Finance Posts -->
         <div class="mb-12">
             <h2 class="text-2xl font-bold mb-6 text-gray-800">Finance Posts</h2>

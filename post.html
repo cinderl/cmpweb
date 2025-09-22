@@ -62,17 +62,19 @@
         }
 
         .markdown-content ul {
-            list-style-type: disc;
-            list-style-position: inside;
+            list-style-type: circle;
+            /* list-style-position: inside; */
             margin-bottom: 1rem;
             color: #4B5563;
+            line-height: 1.75;
         }
 
         .markdown-content ol {
             list-style-type: decimal;
-            list-style-position: inside;
+            /* list-style-position: inside; */
             margin-bottom: 1rem;
             color: #4B5563;
+            line-height: 1.75;
         }
 
         .markdown-content a {
@@ -84,12 +86,25 @@
             color: #1D4ED8;
         }
 
+        date {
+            border-left: 4px solid #3B82F6;
+            font-size: 0.8rem;
+            padding-left: 1rem;
+            font-style: italic;
+            margin: 1rem 0;
+            color: #4B5563;
+            --tw-border-opacity: 1;
+            border-color: rgb(59 130 246 / var(--tw-border-opacity, 1));
+        }
+
         .markdown-content blockquote {
             border-left: 4px solid #D1D5DB;
             padding-left: 1rem;
             font-style: italic;
             margin: 1rem 0;
             color: #4B5563;
+            --tw-border-opacity: 1;
+            border-color: rgb(59 130 246 / var(--tw-border-opacity, 1));
         }
 
         .markdown-content pre {
@@ -122,7 +137,7 @@
 
         .markdown-content hr {
             margin: 2rem 0;
-            border-color: #E5E7EB;
+            border-color: #3B82F6;
         }
     </style>
 </head>
