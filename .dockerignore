@@ -1,0 +1,8 @@
+# Ignore development files and directories
+.git
+.gitignore
+README.md
+Dockerfile
+.dockerignore
+node_modules/
+*.log
