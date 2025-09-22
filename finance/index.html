@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finance Posts - Carlos Mendez</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <script>
         tailwind.config = {
             theme: {
@@ -24,8 +24,8 @@
     <header class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="../../index.html" class="flex items-center">
-                    <img src="../../../img/brand/logo.png" alt="CM Logo" class="h-8 w-auto">
+                <a href="../index.html" class="flex items-center">
+                    <img src="../img/brand/logo.png" alt="CM Logo" class="h-8 w-auto">
                     <span class="ml-2 text-2xl font-bold gradient-text hidden sm:inline-block">Carlos Méndez</span>
                 </a>
                 <!-- Mobile menu button -->
@@ -77,12 +77,12 @@
         </div>
     </footer>
 
-    <script src="../../js/main.js"></script>
+    <script src="../js/main.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', async function() {
             try {
                 // Get the list of markdown files
-                const response = await fetch('../finance');
+                const response = await fetch('../posts/finance/');
                 if (!response.ok) throw new Error('Failed to fetch posts');
                 
                 const files = await response.text();
