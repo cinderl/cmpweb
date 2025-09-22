@@ -34,7 +34,24 @@
                     <img src="img/brand/logo.png" alt="CM Logo" class="h-8 w-auto">
                     <span class="ml-2 text-2xl font-bold gradient-text hidden sm:inline-block">Carlos Méndez</span>
                 </a>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden flex items-center p-2 rounded-md hover:bg-gray-100 transition">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path class="menu-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path class="menu-close hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <!-- Desktop menu -->
                 <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-primary transition">About</a>
+                    <a href="#experience" class="text-gray-600 hover:text-primary transition">Experience</a>
+                    <a href="technologies.html" class="text-gray-600 hover:text-primary transition">Technologies</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary transition">Contact</a>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
                     <a href="#about" class="text-gray-600 hover:text-primary transition">About</a>
                     <a href="#experience" class="text-gray-600 hover:text-primary transition">Experience</a>
                     <a href="technologies.html" class="text-gray-600 hover:text-primary transition">Technologies</a>
