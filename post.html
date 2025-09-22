@@ -190,9 +190,14 @@
     <script src="js/main.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', async function () {
-            // Get the post parameter from URL
+            // Get the post name from either query parameter or hash
             const urlParams = new URLSearchParams(window.location.search);
-            const postName = urlParams.get('post');
+            let postName = urlParams.get('post');
+            
+            // If no query parameter, check for hash
+            if (!postName && window.location.hash) {
+                postName = window.location.hash.substring(1); // Remove the # character
+            }
 
             if (postName) {
                 try {
