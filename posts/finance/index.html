@@ -82,7 +82,7 @@
         document.addEventListener('DOMContentLoaded', async function() {
             try {
                 // Get the list of markdown files
-                const response = await fetch('../finance');
+                const response = await fetch('.');
                 if (!response.ok) throw new Error('Failed to fetch posts');
                 
                 const files = await response.text();
