@@ -20,19 +20,8 @@ You can use *italic*, **bold**, or ***both***.  `Inline code` works too.
 
 Inline image (Unsplash search page):
 
-![Mountain landscape (Unsplash search)](https://unsplash.com/s/photos/mountain-landscape)
+![Mountain landscape (Unsplash search)](https://images.locationscout.net/2023/01/madrid-desde-la-maranosa-spain-z78g.webp?h=1400&q=80)
 
-Madrid skyline (stock/photo page):
-
-![Madrid skyline (Photodune)](https://photodune.net/item/madrid-spain-skyline/21243378)
-
-Madrid from La Marañosa (photo page):
-
-![Madrid desde La Marañosa (Locationscout)](https://www.locationscout.net/spain/43278-madrid-desde-la-maranosa)
-
-High-quality mountain gallery (PhotoPXL):
-
-![Mountain gallery (PhotoPXL)](https://www.josephfiler.com/gallery/mountains/)
 
 > Tip: if you want direct image file URLs (to embed raw images), say so and I’ll gather those specific image links.
 
@@ -40,7 +29,7 @@ High-quality mountain gallery (PhotoPXL):
 
 ## 3. Links
 
-* Unsplash (image search): [https://unsplash.com/s/photos/mountain-landscape](https://unsplash.com/s/photos/mountain-landscape)
+* Unsplash (image search): [https://images.locationscout.net/2023/01/madrid-desde-la-maranosa-spain-z78g.webp?h=1400&q=80](https://unsplash.com/s/photos/mountain-landscape)
 * Photodune (Madrid skyline): [https://photodune.net/item/madrid-spain-skyline/21243378](https://photodune.net/item/madrid-spain-skyline/21243378)
 * Locationscout (Madrid photo): [https://www.locationscout.net/spain/43278-madrid-desde-la-maranosa](https://www.locationscout.net/spain/43278-madrid-desde-la-maranosa)
 * PhotoPXL mountain gallery: [https://www.josephfiler.com/gallery/mountains/](https://www.josephfiler.com/gallery/mountains/)
