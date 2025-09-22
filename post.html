@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - Carlos Mendez</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Add marked.js for Markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Add highlight.js for code syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#8B5CF6',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Markdown content styling */
+        .markdown-content h1 { 
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        .markdown-content h2 { 
+            font-size: 1.875rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+        .markdown-content h3 { 
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            margin-top: 1.5rem;
+        }
+        .markdown-content p { 
+            color: #4B5563;
+            margin-bottom: 1rem;
+            line-height: 1.75;
+        }
+        .markdown-content ul { 
+            list-style-type: disc;
+            list-style-position: inside;
+            margin-bottom: 1rem;
+            color: #4B5563;
+        }
+        .markdown-content ol { 
+            list-style-type: decimal;
+            list-style-position: inside;
+            margin-bottom: 1rem;
+            color: #4B5563;
+        }
+        .markdown-content a { 
+            color: #3B82F6;
+            text-decoration: underline;
+        }
+        .markdown-content a:hover {
+            color: #1D4ED8;
+        }
+        .markdown-content blockquote { 
+            border-left: 4px solid #D1D5DB;
+            padding-left: 1rem;
+            font-style: italic;
+            margin: 1rem 0;
+            color: #4B5563;
+        }
+        .markdown-content pre { 
+            background-color: #F9FAFB;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            overflow-x: auto;
+        }
+        .markdown-content code { 
+            background-color: #F9FAFB;
+            border-radius: 0.25rem;
+            padding: 0.125rem 0.25rem;
+            font-size: 0.875rem;
+        }
+        .markdown-content pre code { 
+            background-color: transparent;
+            padding: 0;
+        }
+        .markdown-content img { 
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin: 1rem 0;
+        }
+        .markdown-content hr { 
+            margin: 2rem 0;
+            border-color: #E5E7EB;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center">
+                    <img src="img/brand/logo.png" alt="CM Logo" class="h-8 w-auto">
+                    <span class="ml-2 text-2xl font-bold gradient-text hidden sm:inline-block">Carlos Méndez</span>
+                </a>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden flex items-center p-2 rounded-md hover:bg-gray-100 transition">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path class="menu-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path class="menu-close hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <!-- Desktop menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#about" class="text-gray-600 hover:text-primary transition">About</a>
+                    <a href="index.html#experience" class="text-gray-600 hover:text-primary transition">Experience</a>
+                    <a href="technologies.html" class="text-gray-600 hover:text-primary transition">Technologies</a>
+                    <a href="index.html#contact" class="text-gray-600 hover:text-primary transition">Contact</a>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 bg-white/95 absolute top-full left-0 right-0 shadow-lg border-t">
+                <div class="flex flex-col space-y-4 px-6 py-4">
+                    <a href="index.html#about" class="text-gray-600 hover:text-primary transition text-lg">About</a>
+                    <a href="index.html#experience" class="text-gray-600 hover:text-primary transition text-lg">Experience</a>
+                    <a href="technologies.html" class="text-gray-600 hover:text-primary transition text-lg">Technologies</a>
+                    <a href="index.html#contact" class="text-gray-600 hover:text-primary transition text-lg">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Post Content -->
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-sm p-8 md:p-12">
+                <div id="markdown-content" class="markdown-content">
+                    <!-- Markdown content will be rendered here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Carlos Mendez. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async function() {
+            // Get the post parameter from URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const postName = urlParams.get('post');
+
+            if (postName) {
+                try {
+                    // Fetch the markdown file
+                    const response = await fetch(`posts/${postName}.md`);
+                    if (!response.ok) throw new Error('Post not found');
+                    
+                    const markdown = await response.text();
+                    
+                    // Configure marked options
+                    marked.setOptions({
+                        highlight: function(code, lang) {
+                            if (lang && hljs.getLanguage(lang)) {
+                                return hljs.highlight(code, { language: lang }).value;
+                            }
+                            return hljs.highlightAuto(code).value;
+                        },
+                        breaks: true,
+                        gfm: true
+                    });
+
+                    // Render the markdown content
+                    const content = document.getElementById('markdown-content');
+                    content.innerHTML = marked.parse(markdown);
+
+                    // Highlight code blocks
+                    document.querySelectorAll('pre code').forEach((block) => {
+                        hljs.highlightBlock(block);
+                    });
+
+                    // Update page title if there's an h1
+                    const h1 = content.querySelector('h1');
+                    if (h1) {
+                        document.title = `${h1.textContent} - Carlos Mendez`;
+                    }
+                } catch (error) {
+                    document.getElementById('markdown-content').innerHTML = `
+                        <div class="text-center py-12">
+                            <h1 class="text-3xl font-bold text-gray-800 mb-4">Post Not Found</h1>
+                            <p class="text-gray-600">The requested post could not be found.</p>
+                            <a href="index.html" class="inline-block mt-6 text-primary hover:text-blue-700">← Back to Home</a>
+                        </div>
+                    `;
+                }
+            } else {
+                // No post parameter provided
+                document.getElementById('markdown-content').innerHTML = `
+                    <div class="text-center py-12">
+                        <h1 class="text-3xl font-bold text-gray-800 mb-4">No Post Selected</h1>
+                        <p class="text-gray-600">Please select a post to view.</p>
+                        <a href="index.html" class="inline-block mt-6 text-primary hover:text-blue-700">← Back to Home</a>
+                    </div>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>
