@@ -1,4 +1,4 @@
-**Diageo plc (DGE) Financial Analysis**
+### **Diageo plc (DGE) Financial Analysis**
 
 <date>September 5, 2025</date>
 
