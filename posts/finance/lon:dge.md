@@ -1,4 +1,6 @@
-**Diageo plc (DGE) Financial Analysis - September 5, 2025**
+**Diageo plc (DGE) Financial Analysis**
+
+<date>September 5, 2025</date>
 
 An in-depth fundamental analysis of Diageo plc, based on its latest financial year 2025 results, indicates a company with robust profitability and strong cash flow generation, facing some headwinds but maintaining a commitment to shareholder returns. The current share price of £21.30 presents a potential entry point for long-term dividend-growth investors, with the intrinsic value estimated to be significantly higher.
 

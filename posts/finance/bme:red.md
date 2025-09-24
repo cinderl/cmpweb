@@ -1,5 +1,7 @@
 Analysis of BME: RED (Redeia Corporación S.A.)
 
+<date>September 17, 2025</date>
+
 **Disclaimer:** All data is based on information available up to September 17, 2025. Financial figures for 2025 are estimates and may be subject to change.
 
 ### Analysis Table

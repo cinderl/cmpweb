@@ -1,6 +1,7 @@
 ### Financial Analysis of Enagás (BME:ENG)
 
-**Date of Analysis:** September 16, 2025
+<date>September 16, 2025</date>
+
 **Current Stock Price:** €13.23
 
 This analysis is based on available financial data for Enagás (BME:ENG), a major European natural gas infrastructure company. The focus is on the company's financial health, profitability, and dividend sustainability, with a particular emphasis on data from the year 2024 and trailing twelve months (TTM) as of mid-2025.

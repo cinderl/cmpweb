@@ -2,7 +2,7 @@
 
 <date>September 24, 2025</date>
 
-**Current Stock Price:** $49.40 (Note: The most recent data from September 23, 2025, shows a price of $50.56. I will use the user-provided price of $49.40 for calculations).
+**Current Stock Price:** $49.40
 
 ---
 
