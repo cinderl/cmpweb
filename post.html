@@ -225,6 +225,14 @@
                         hljs.highlightBlock(block);
                     });
 
+                    // Wrap tables in responsive container
+                    document.querySelectorAll('.markdown-content table').forEach((table) => {
+                        const wrapper = document.createElement('div');
+                        wrapper.className = 'relative overflow-x-auto';
+                        table.parentNode.insertBefore(wrapper, table);
+                        wrapper.appendChild(table);
+                    });
+
                     // Update page title if there's an h1
                     const h1 = content.querySelector('h1');
                     if (h1) {
