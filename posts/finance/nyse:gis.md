@@ -1,4 +1,4 @@
-### Financial Analysis of General Mills (GIS)
+## Financial Analysis of General Mills (GIS)
 
 <date>September 24, 2025</date>
 

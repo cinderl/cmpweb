@@ -1,4 +1,4 @@
-### Financial Analysis of Enagás (BME:ENG)
+## Financial Analysis of Enagás (BME:ENG)
 
 <date>September 16, 2025</date>
 

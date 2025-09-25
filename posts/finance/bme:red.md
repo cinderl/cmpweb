@@ -1,4 +1,4 @@
-### Analysis of BME: RED (Redeia Corporación S.A.)
+## Analysis of BME: RED (Redeia Corporación S.A.)
 
 <date>September 17, 2025</date>
 
