@@ -12,10 +12,6 @@
     <!-- Add highlight.js for code syntax highlighting -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-    <!-- Add KaTeX for math rendering -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -143,17 +139,6 @@
             margin: 2rem 0;
             border-color: #3B82F6;
         }
-
-        /* Math equation styling */
-        .markdown-content .katex-display {
-            margin: 1.5rem 0;
-            overflow-x: auto;
-            overflow-y: hidden;
-        }
-
-        .markdown-content .katex {
-            font-size: 1.1em;
-        }
     </style>
 </head>
 
@@ -234,15 +219,6 @@
                     // Render the markdown content
                     const content = document.getElementById('markdown-content');
                     content.innerHTML = marked.parse(markdown);
-
-                    // Render math expressions
-                    renderMathInElement(content, {
-                        delimiters: [
-                            {left: '$$', right: '$$', display: true},
-                            {left: '$', right: '$', display: false}
-                        ],
-                        throwOnError: false
-                    });
 
                     // Highlight code blocks
                     document.querySelectorAll('pre code').forEach((block) => {
