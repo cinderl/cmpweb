@@ -17,7 +17,7 @@ Everything starts with Home Assistant. It aggregates data from all my sensors an
 
 ### My Dashboard
 
-![Dashboard](./markdown_images/image_1.png)
+![Dashboard](./posts/technology/markdown_images/image_1.png)
 
 While this dashboard provides great real-time visibility, I needed historical data to train a model capable of predicting future voltage behavior.
 
@@ -27,7 +27,7 @@ While this dashboard provides great real-time visibility, I needed historical da
 
 To connect Home Assistant with my AI backend, I used Node-Red. It sends the current timestamp to my prediction API and writes the output into MQTT sensors that Home Assistant reads.
 
-![Node-Red Flow](./markdown_images/image_2.png)
+![Node-Red Flow](./posts/technology/markdown_images/image_2.png)
 
 The flow extracts four key metrics:
 
@@ -63,13 +63,13 @@ The system uses a feed-forward neural network implemented in PyTorch. But before
 
 Since hour “23” and “0” are next to each other in time but far numerically, I use sine/cosine transformations to encode temporal features.
 
-![Cyclical Encoding](./markdown_images/image_3.png)
+![Cyclical Encoding](./posts/technology/markdown_images/image_3.png)
 
 ### Model Architecture
 
 The neural network includes several dense layers with `nn.Dropout` to reduce overfitting.
 
-![Model Architecture](./markdown_images/image_4.png)
+![Model Architecture](./posts/technology/markdown_images/image_4.png)
 
 ---
 
@@ -77,11 +77,11 @@ The neural network includes several dense layers with `nn.Dropout` to reduce ove
 
 Training was performed on historical data (`history.csv`) using early stopping to maintain the best weights.
 
-![History CSV](./markdown_images/image_5.png)
+![History CSV](./posts/technology/markdown_images/image_5.png)
 
 The training and validation curves show a healthy convergence without overfitting:
 
-![Training Curves](./markdown_images/image_6.png)
+![Training Curves](./posts/technology/markdown_images/image_6.png)
 
 ### Key Observations
 
@@ -93,7 +93,7 @@ The training and validation curves show a healthy convergence without overfittin
 
 To understand *why* the model predicts voltage drops, I applied SHAP analysis.
 
-![SHAP Summary](./markdown_images/image_7.png)
+![SHAP Summary](./posts/technology/markdown_images/image_7.png)
 
 #### What the Model Learned
 
@@ -123,7 +123,7 @@ The system runs via Docker Compose, with separate services for:
 * SHAP explainability
 * API prediction service
 
-![Docker Compose](./markdown_images/image_8.png)
+![Docker Compose](./posts/technology/markdown_images/image_8.png)
 
 ### Trend Adjustment Logic
 
@@ -147,7 +147,7 @@ def adjust_prediction_with_trend(current, past, future):
 
 The system is fully operational. Below, the red line is the real voltage and the cyan line shows the model’s prediction:
 
-![Real vs Predicted](./markdown_images/image_9.png)
+![Real vs Predicted](./posts/technology/markdown_images/image_9.png)
 
 When a voltage dip is predicted and the risk is high:
 
@@ -155,9 +155,9 @@ When a voltage dip is predicted and the risk is high:
 * I receive a Telegram notification
 * Automations disconnect non-essential heavy loads (e.g., the water heater)
 
-![HA Graph](./markdown_images/image_10.png)
+![HA Graph](./posts/technology/markdown_images/image_10.png)
 
-![Telegram Alert](./markdown_images/image_11.png)
+![Telegram Alert](./posts/technology/markdown_images/image_11.png)
 
 ---
 
