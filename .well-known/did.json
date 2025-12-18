@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/ed25519-2020/v1"
+  ],
+  "id": "did:web:carlosmendez.eu",
+  "verificationMethod": [
+    {
+      "id": "did:web:carlosmendez.eu#key-1",
+      "type": "Ed25519VerificationKey2020",
+      "controller": "did:web:carlosmendez.eu",
+      "publicKeyMultibase": "z6Mkigt3RDE8PiVQijRw833h9y9gQRoLC2hbP78zB7DrA7Lc"
+    }
+  ],
+  "authentication": [
+    "did:web:carlosmendez.eu#key-1"
+  ],
+  "assertionMethod": [
+    "did:web:carlosmendez.eu#key-1"
+  ],
+    "keyAgreement": [
+    "did:web:carlosmendez.eu#key-1"
+  ],
+
+  "service": [
+    {
+      "id": "did:web:carlosmendez.eu#gx-credential-service",
+      "type": "GaiaXCredentialService",
+      "serviceEndpoint": "https://carlosmendez.eu/credentials"
+    }
+  ]
+}
