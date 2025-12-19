@@ -1,0 +1,27 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://registry.gaia-x.eu/v2206/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "gx:LegalParticipant"
+  ],
+  "id": "urn:uuid:14934766-996b-4782-b9cc-d87347a66855",
+
+  "issuer": "did:web:carlosmendez.eu",
+  "issuanceDate": "2025-01-01T00:00:00Z",
+
+  "credentialSubject": {
+    "id": "did:web:carlosmendez.eu",
+
+    "gx:legalName": "Carlos Mendez",
+    "gx:legalRegistrationNumber": {
+      "gx:registrationNumber": "ES-CARLOSMENDEZ",
+      "gx:registrationAuthority": "Spain"
+    },
+    "gx:headquarterAddress": {
+      "gx:countrySubdivisionCode": "ES-MD"
+    }
+  }
+}
